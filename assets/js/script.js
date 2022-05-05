@@ -43,12 +43,12 @@ function displayPlayerRock() {
 
 function displayPlayerPaper() {
 
-    document.getElementById("user-image").src = "assets/images/rock-img.png";
+    document.getElementById("user-image").src = "assets/images/paper-img.png";
 }
 
 function displayPlayerScissors() {
 
-    document.getElementById("user-image").src = "assets/images/rock-img.png";
+    document.getElementById("user-image").src = "assets/images/scissors-img.png";
 }
 
 

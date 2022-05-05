@@ -68,24 +68,18 @@ height: 75%;
 
 }
 
-#score {
-    color: green;
-    font-weight: bold;
-}
 
 
 
 
 
-.player-score {
+
+.scores {
     display: inline-block;
     padding: 25px;
 }
 
-.computer-score {
-    display: inline-block;
-    padding: 25px;
-}
+
 
 /* --------- Buttons */
 
