@@ -33,7 +33,7 @@ function playGame(playerChoice) {
             throw `Error!!`;
     }
     let computerChoice = Math.floor(Math.random)*3;
-    e
+    
 }
 
 function displayPlayerRock() {
