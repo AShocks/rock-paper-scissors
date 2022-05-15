@@ -14,15 +14,6 @@ body {
     font-size: 2.5rem;
 }
 
-.logo {
-    height: 100px;
-    width: 120px;
-    padding-right: 5px;
-    
-}
-
-
-
 /* --------- Game layout */
 
 .game-area {
@@ -41,11 +32,7 @@ body {
     width: 50%;
     font-size: 2rem;
     margin: auto;
-    
 }
-
-
-
 
 .score-area {
     margin: 1px auto;
@@ -58,28 +45,16 @@ body {
     margin: 30px auto;
 }
 
-
-
-
-
 .game-area img  {
 width: 75%;
 height: 75%;
 
 }
 
-
-
-
-
-
-
 .scores {
     display: inline-block;
     padding: 25px;
 }
-
-
 
 /* --------- Buttons */
 
@@ -108,8 +83,6 @@ height: 75%;
     margin: 0 30px;
     transition: all 0.5s;
 }
-
-
 
 .btn--rock {
     border-color: blue;
@@ -144,14 +117,6 @@ height: 75%;
     
 }
 
-
-
-
-
-
-
-
-
 /* --------- Media queries */
 
 @media (max-width: 414px) {
@@ -181,11 +146,6 @@ height: 75%;
     .choice-area span {
         padding: 0;
     }
-
-    
-
-    
-    
 
     .score-area {
         width: 100%;
