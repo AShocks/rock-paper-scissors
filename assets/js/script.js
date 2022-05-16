@@ -8,127 +8,85 @@
             let playerChoice = this.getAttribute("data-type");
             playGame(playerChoice);
 
-            //setTimeout(function () {
+            
                 playGame(playerChoice);
             ;
         });
     }
 });
 
-function Game() {
+function Game(playerChoice) {
 
+    switch (playerChoice) {
+        case "Rock":
+            alert("Rock");
+            break;
+        case "Paper":
+            alert("Paper");
+            break;
+        case "Scissors":
+            alert("Scissors");
+            break;
+        default:
+            alert(`Game error, please try again later.`);
+            throw `Game error! Please investigate`;
+    }
+
+    
 }
 
-function playGame() {
+function playGame(playerChoice) {
+    let choices = ["Rock", "Paper", "Scissors"];
+    let randomComputerChoice = choices[Math.floor(Math.random() * choices.length)];
+    if (randomComputerChoice === "Rock" && playerChoice === "Rock") {
+        alert(`You played: ${playerChoice} \nThe computer played: ${randomComputerChoice} \nIt"s a draw!`);
+            
+        } else if (randomComputerChoice === "Rock" && playerChoice === "Paper") {
+            alert(`You played: ${playerChoice} \nThe computer played: ${randomComputerChoice} \nYou won!`);
+            incrementPlayerScore();
+        
+        } else if (randomComputerChoice === "Rock" && playerChoice === "Scissors") {
+            alert(`You played: ${playerChoice} \nThe computer played: ${randomComputerChoice} \nYou lost!\n`);
+            incrementComputerScore();
+        
+        } else if (randomComputerChoice === "Paper" && playerChoice === "Rock") {
+            alert(`You played: ${playerChoice} \nThe computer played: ${randomComputerChoice} \nYou lost!\n`);
+            incrementComputerScore();
+        
+        } else if (randomComputerChoice === "Paper" && playerChoice === "Paper") {
+            alert(`You played: ${playerChoice} \nThe computer played: ${randomComputerChoice} \nIt"s a draw!`);
+            
+        } else if (randomComputerChoice === "Paper" && playerChoice === "Scissors") {
+            alert(`You played: ${playerChoice} \nThe computer played: ${randomComputerChoice} \nYou won!`);
+            incrementPlayerScore();
+        
+        } else if (randomComputerChoice === "Scissors" && playerChoice === "Rock") {
+            alert(`You played: ${playerChoice} \nThe computer played: ${randomComputerChoice} \nYou won!`);
+            incrementPlayerScore();
+        
+        } else if (randomComputerChoice === "Scissors" && playerChoice === "Paper") {
+            alert(`You played: ${playerChoice} \nThe computer played: ${randomComputerChoice} \nYou lost!\n`);
+            incrementComputerScore();
+        
+        } else if (randomComputerChoice === "Scissors" && playerChoice === "Scissors") {
+            alert(`You played: ${playerChoice} \nThe computer played: ${randomComputerChoice} \nIt"s a draw!`);
+            
+        } else {
+            alert(`Game error, please try again later.`);
+            throw `Game error! Please investigate`;
+    }
 
 }
-
-function incrementPlayerScore() {
-
-}
-
-function incrementComputerScore() {
-
-}
-/*declare variables for DOM elements and possible choices*/
 
 let playerScore = 0;
 let computerScore = 0;
-const playerScoreSpan = document.getElementById("player-score");
-const computerScoreSpan = document.getElementById("computer-score");
-const scoreAreaDiv = document.querySelector(".score-area");
-const message_p = document.querySelector(".message > p");
-const rockButton = document.getElementById("Rock");
-const paperButton = document.getElementById("Paper");
-const scissorsButton = document.getElementById("Scissors");
-
-function getComputerChoice() {
-    const choices = ['Rock', 'Paper', 'Scissors'];
-    const randomNumber = Math.floor(Math.random() * 3);
-    return choices[randomNumber];
-}
-
-function win(playerChoice, computerChoice) {
-    playerScore++;
-    playerScoreSpan.innerHTML = playerScore;
-    computerScoreSpan.innerHTML = computerScore;
-    message_p.innerHTML = `${playerChoice} beats ${computerChoice}. You Win!`;
-}
-
-function lose(playerChoice, computerChoice) { 
-    computerScore++;
-    playerScoreSpan.innerHTML = playerScore;
-    computerScoreSpan.innerHTML = computerScore;
-    message_p.innerHTML = `${playerChoice} loses to ${computerChoice}. You Lose!`;
-    
-}
-
-function draw(playerChoice, computerChoice) {
-    message_p.innerHTML = `${playerChoice} equals ${computerChoice}. It's a Draw!`;
-    
-}
-
-/* The main game function */ 
-function playGame(playerChoice) {
-    const computerChoice = getComputerChoice;
-    switch (playerChoice + computerChoice) {
-        case "RockScissors":
-        case "PaperRock":
-        case "ScissorsPaper":
-            alert("you chose");
-            win(playerChoice, computerChoice);
-            break;
-        case "ScissorsRock":
-        case "RockPaper":
-        case "PaperScissors":
-            lose(playerChoice, computerChoice);
-            break;
-        case "RockRock":
-        case "PaperPaper":
-        case "ScissorsScissors":
-            draw(playerChoice, computerChoice);
-            break;
-            default:
-                alert('Error, please try again later');
-    }
-    
-    
-}
-
-
-function main() {
-    rockButton.addEventListener('click', () => playGame("Rock"));
-    
-    paperButton.addEventListener('click', () => playGame("Paper"));
-    
-    scissorsButton.addEventListener('click', () => playGame("Scissors"));
-}
-
-main();
-
-
-
-
-    
-
-
-
-
-
-
-
-
 
 function incrementPlayerScore() {
-
+    playerScore++;
+    document.getElementById("player-score").innerHTML = playerScore;
 }
 
 function incrementComputerScore() {
-
+    computerScore++;
+    document.getElementById("computer-score").innerHTML = computerScore;
 }
-
-
-
-
-
-
