@@ -1,3 +1,20 @@
+/**
+ * Add event listeners to all the buttons
+ */
+ document.addEventListener("DOMContentLoaded", function () {
+    let buttons = document.getElementsByClassName("btn");
+    for (let button of buttons) {
+        button.addEventListener("click", function () {
+            let playerChoice = this.getAttribute("data-type");
+            playGame(playerChoice);
+
+            //setTimeout(function () {
+                returnGame(playerChoice);
+            ;
+        });
+    }
+});
+
 /*declare variables for DOM elements and possible choices*/
 
 let playerScore = 0;
