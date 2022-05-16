@@ -10,30 +10,12 @@ const rockButton = document.getElementById("Rock");
 const paperButton = document.getElementById("Paper");
 const scissorsButton = document.getElementById("Scissors");
 
-
-function main() {
-    rockButton.addEventListener('click', function() {
-        playGame("Rock")
-        
-    })
-    
-    paperButton.addEventListener('click', function() {
-        playGame("Paper")
-        
-    })
-    
-    scissorsButton.addEventListener('click', function() {
-        playGame("Scissors")
-        
-    })
+function getComputerChoice() {
+    const choices = ['Rock', 'Paper', 'Scissors'];
+    const randomNumber = Math.floor(Math.random() * 3);
+    return choices[randomNumber];
 }
 
-main();
-
-
-
-
-    
 function win(playerChoice, computerChoice) {
     playerScore++;
     playerScoreSpan.innerHTML = playerScore;
@@ -54,12 +36,6 @@ function draw(playerChoice, computerChoice) {
     
 }
 
-function getComputerChoice() {
-    const choices = ['Rock', 'Paper', 'Scissors'];
-    const randomNumber = Math.floor(Math.random() * 3);
-    return choices[randomNumber];
-}
-
 /* The main game function */ 
 function playGame(playerChoice) {
     const computerChoice = getComputerChoice;
@@ -67,6 +43,7 @@ function playGame(playerChoice) {
         case "RockScissors":
         case "PaperRock":
         case "ScissorsPaper":
+            alert("you chose");
             win(playerChoice, computerChoice);
             break;
         case "ScissorsRock":
@@ -87,6 +64,26 @@ function playGame(playerChoice) {
 }
 
 
+function main() {
+    rockButton.addEventListener('click', () => playGame("Rock"));
+    
+    paperButton.addEventListener('click', () => playGame("Paper"));
+    
+    scissorsButton.addEventListener('click', () => playGame("Scissors"));
+}
+
+main();
+
+
+
+
+    
+
+
+
+
+
+
 
 
 
@@ -98,9 +95,7 @@ function incrementComputerScore() {
 
 }
 
-function checkWinner() {
 
-}
 
 
 
