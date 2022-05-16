@@ -9,39 +9,78 @@ const message_p = document.querySelector(".message > p");
 const rockButton = document.getElementById("Rock");
 const paperButton = document.getElementById("Paper");
 const scissorsButton = document.getElementById("Scissors");
-//const choices = ["rock","paper","scissors"];
 
 
-
-
+function main() {
+    rockButton.addEventListener('click', function() {
+        playGame("Rock")
+        
+    })
     
-function win() {
-
+    paperButton.addEventListener('click', function() {
+        playGame("Paper")
+        
+    })
+    
+    scissorsButton.addEventListener('click', function() {
+        playGame("Scissors")
+        
+    })
 }
 
-function lose() {
+main();
+
+
+
+
+    
+function win(playerChoice, computerChoice) {
+    playerScore++;
+    playerScoreSpan.innerHTML = playerScore;
+    computerScoreSpan.innerHTML = computerScore;
+    message_p.innerHTML = `${playerChoice} beats ${computerChoice}. You Win!`;
+}
+
+function lose(playerChoice, computerChoice) { 
+    computerScore++;
+    playerScoreSpan.innerHTML = playerScore;
+    computerScoreSpan.innerHTML = computerScore;
+    message_p.innerHTML = `${playerChoice} loses to ${computerChoice}. You Lose!`;
     
 }
 
-function draw() {
+function draw(playerChoice, computerChoice) {
+    message_p.innerHTML = `${playerChoice} equals ${computerChoice}. It's a Draw!`;
     
+}
+
+function getComputerChoice() {
+    const choices = ['Rock', 'Paper', 'Scissors'];
+    const randomNumber = Math.floor(Math.random() * 3);
+    return choices[randomNumber];
 }
 
 /* The main game function */ 
 function playGame(playerChoice) {
-    switch (playerChoice) {
-        case "Rock":
-            displayPlayerRock();
+    const computerChoice = getComputerChoice;
+    switch (playerChoice + computerChoice) {
+        case "RockScissors":
+        case "PaperRock":
+        case "ScissorsPaper":
+            win(playerChoice, computerChoice);
             break;
-        case "Paper":
-            displayPlayerPaper();
+        case "ScissorsRock":
+        case "RockPaper":
+        case "PaperScissors":
+            lose(playerChoice, computerChoice);
             break;
-        case "Scissors":
-            displayPlayerScissors();
+        case "RockRock":
+        case "PaperPaper":
+        case "ScissorsScissors":
+            draw(playerChoice, computerChoice);
             break;
-        default:
-            alert(`Error, please try again.`);
-            throw `Error!!`;
+            default:
+                alert('Error, please try again later');
     }
     
     
