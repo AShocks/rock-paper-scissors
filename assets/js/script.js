@@ -9,12 +9,27 @@
             playGame(playerChoice);
 
             //setTimeout(function () {
-                returnGame(playerChoice);
+                playGame(playerChoice);
             ;
         });
     }
 });
 
+function Game() {
+
+}
+
+function playGame() {
+
+}
+
+function incrementPlayerScore() {
+
+}
+
+function incrementComputerScore() {
+
+}
 /*declare variables for DOM elements and possible choices*/
 
 let playerScore = 0;
