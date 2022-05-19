@@ -9,31 +9,13 @@
             playGame(playerChoice);
 
             
-                playGame(playerChoice);
-            ;
+                
+            
         });
     }
 });
 
-function Game(playerChoice) {
 
-    switch (playerChoice) {
-        case "Rock":
-            alert("Rock");
-            break;
-        case "Paper":
-            alert("Paper");
-            break;
-        case "Scissors":
-            alert("Scissors");
-            break;
-        default:
-            alert(`Game error, please try again later.`);
-            throw `Game error! Please investigate`;
-    }
-
-    
-}
 
 function playGame(playerChoice) {
     let choices = ["Rock", "Paper", "Scissors"];
