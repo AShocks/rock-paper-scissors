@@ -23,6 +23,9 @@ The site will be targeted towards both adults and children as a fun way to learn
     - Each button has a different colour border, blue, green and red with a white background which        changes to its border colour background when the user hovers over them.
 
 
+    ![Button Choice](assets/images/img_11.PNG)
+
+
 -The game results
     -When the user clicks on a button, it should display the users choice on the interface and then tell what the random choice if the computer is.
     -An alert would then tell the user who had won and update the scoreboard accordingly.
