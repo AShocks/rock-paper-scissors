@@ -23,7 +23,8 @@ The site will be targeted towards both adults and children as a fun way to learn
     - Each button has a different colour border, blue, green and red with a white background which        changes to its border colour background when the user hovers over them.
     - This section provides interactive buttons that the user can click to make their choice and play the game.
 
-    ![button options](assets/images/img_11.PNG) 
+    ![button options](assets/images/img_11.PNG)
+     
 
 
 
@@ -34,7 +35,7 @@ The site will be targeted towards both adults and children as a fun way to learn
     -When the user clicks on a button, it displays the users choice on a pop-up alert and then tells what the random choice of the computer is.
     -The alert then tells the user who has won and updates the scoreboard accordingly.
 
-    ![game interface](assets/images/img_5.PNG)
+    
     
 
 ## Features left to implement
