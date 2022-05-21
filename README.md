@@ -15,12 +15,15 @@ The site will be targeted towards both adults and children as a fun way to learn
     - The header clearly tells the user what game they are playing.
 
     
-    
+    ![Game Header](assets/images/img_10.PNG)
     
 
  -The Game Options
     - The game options include a clear instruction to choose a button to click.
     - Each button has a different colour border, blue, green and red with a white background which        changes to its border colour background when the user hovers over them.
+    - This section provides interactive buttons that the user can click to make their choice and play the game.
+
+    ![Button Options](assets/images/img_11.PNG) 
 
 
     
