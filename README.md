@@ -4,7 +4,7 @@ Rock Paper Scissors is a game that anyone can play and is often played by people
 The site will be targeted towards both adults and children as a fun way to learn how to apply it's rules to help come to decisions with other people in their lives.
 
 
-![The website interface](assets/images/img-5.PNG)
+![The website interface](assets/images/img_1.PNG)
 
 ## Features
 
@@ -15,7 +15,8 @@ The site will be targeted towards both adults and children as a fun way to learn
     - The header clearly tells the user what game they are playing.
 
     
-    ![Header and game area](assets/images/img-6.PNG)
+    
+    ![Header](assets/images/img_10.PNG)
 
  -The Game Options
     - The game options include a clear instruction to choose a button to click.
