@@ -31,9 +31,9 @@ The site will be targeted towards both adults and children as a fun way to learn
     
 
 
--The game results
-    -When the user clicks on a button, it displays the users choice on a pop-up alert and then tells the user what the random choice of the computer is.
-    -The alert then tells the user who has won and updates the scoreboard accordingly.
+# The Game Results
+    When the user clicks on a button, it displays the users choice on a pop-up alert and then tells the user what the random choice of the computer is.
+    The alert then tells the user who has won and updates the scoreboard accordingly.
 
 ![score update](assets/images/img_6.PNG)
     
@@ -41,14 +41,15 @@ The site will be targeted towards both adults and children as a fun way to learn
 
 ## Features left to implement
    
-   -There is a lot that I would do to this game when there is time, such as a working scoreboard and pop-up alerts to tell the user who has won each game as well as as overall winner.
-   - I think the game could be a lot simpler to design and implement but I overcomplicated it myself as I went along,  which is a lesson that I have learned for the future.
+   There is a lot that I would do to this game, such as implementing a set number of attempts per game played, eg. 10 before the game then finishes.
+   I would also include a button to give the user the option to restsart the game once it finishes.
 
  ## Testing
     
     -I tested the game in different browsers: Chrome, Safari and Firefox.
-    -I confirmed that the header, buttons, rules, options and scoreboard are all readable and easy to   understand.
-    -I confirmed that the colours anf fonts chosen are easy to read and accessible by running it trough lighthouse in devtools.
+    -I confirmed that the header, buttons, rules, options and scoreboard are all readable and easy to understand.
+    -I confirmed that the colours and fonts chosen are easy to read and accessible by running it trough lighthouse in devtools.
+    -All results were tested and found to be always correct.
 
 
 ![Screenshot of lighthouse report](assets/images/lighthouse.PNG)
@@ -72,6 +73,9 @@ The site will be targeted towards both adults and children as a fun way to learn
     - CSS
         - No errors were found when passing through the official (Jigsaw)) validator.
 
+![HTML validator](assets/images/img_2.PNG)
+![CSS validator](assets/images/img_3.PNG)
+
 ## Unfixed Bugs
 
     - No unfixed bugs
@@ -81,16 +85,21 @@ The site will be targeted towards both adults and children as a fun way to learn
 
     - The site was deployed to Github pages. The steps to deploy are as follows:
         - In the Github repository, navigate to the settings tab.
-        - From the source section drop-down menu, seect the master branch.
+        - From the source section drop-down menu, select the master branch.
         - Once the master branch was selected, the page provided the link to the live website.
 
-        The deployed site can be seen [here](https://ashocks.github.io/rock-paper-scissors/)
-
+The deployed site can be seen [here](https://ashocks.github.io/rock-paper-scissors/)
+        
 ## Credits
 
-    - Much of the code for the design part was taken from 
-    [LoveMaths](https://learn.codeinstitute.net/ci_program/diplomainsoftwaredevelopmentecommerce)
+Inspiration for the game logic was from [geeksforgeeks](https://www.geeksforgeeks.org/rock-paper-and-scissor-game-using-javascript/)
 
+Much of the code for the design part was taken from 
+[LoveMaths](https://learn.codeinstitute.net/ci_program/diplomainsoftwaredevelopmentecommerce)
+
+## Media
+
+The images for the buttons were taken from [ClipArtMax](https://www.clipartmax.com/)
 
 
 
