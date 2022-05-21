@@ -1,36 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- font awesome and google fonts -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" 
-    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Raleway%7CRighteous" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Rock Paper Scissors!</title>
 </head>
+
 <body>
-    
+
     <h1 class="heading">Rock Paper Scissors</h1>
-    
+
     <div class="game-area">
         <div class="choice-area">
             <p class="player-choice">Make A Choice</p>
-            <p class ="message"></p>
+            <p class="message"></p>
         </div>
-        
+
         <div class="controls-area">
-            <button data-type="Rock"  class="btn btn--big btn--rock">
+            <button data-type="Rock" class="btn btn--big btn--rock">
                 <img src="assets/images/rock-img.png" alt="rock image">
             </button>
-            <button data-type="Paper"  class="btn btn--big btn--paper">
-             <img src="assets/images/paper-img.png" alt="paper image">
-            </button> 
-            <button data-type="Scissors"  class="btn btn--big btn--scissors">
-             <img src="assets/images/scissors-img.png" alt="scissors image">
+            <button data-type="Paper" class="btn btn--big btn--paper">
+                <img src="assets/images/paper-img.png" alt="paper image">
+            </button>
+            <button data-type="Scissors" class="btn btn--big btn--scissors">
+                <img src="assets/images/scissors-img.png" alt="scissors image">
             </button>
         </div>
         <div>
@@ -39,15 +41,16 @@
             <p class="rules">Scissors Beats Paper</p>
         </div>
 
-        
-            
+
+
     </div>
 
     <div class="score-area">
         <p class="scores">Player Score: <span id="player-score">0</span></p>
         <p class="scores">Computer Score: <span id="computer-score">0</span></p>
     </div>
-    
+
     <script src="assets/js/script.js"></script>
 </body>
+
 </html>
