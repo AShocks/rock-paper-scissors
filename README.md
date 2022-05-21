@@ -16,7 +16,7 @@ The site will be targeted towards both adults and children as a fun way to learn
 
     
     
-    ![Header](assets/images/img_10.PNG)
+    
 
  -The Game Options
     - The game options include a clear instruction to choose a button to click.
