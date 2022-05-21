@@ -31,11 +31,11 @@ The site will be targeted towards both adults and children as a fun way to learn
 
 
 -The game results
-    -When the user clicks on a button, it should display the users choice on the interface and then tell what the random choice if the computer is.
-    -An alert would then tell the user who had won and update the scoreboard accordingly.
+    -When the user clicks on a button, it displays the users choice on a pop-up alert and then tells what the random choice of the computer is.
+    -The alert then tells the user who has won and updates the scoreboard accordingly.
 
-
-    ![Popup Result](assets/images/img_5.PNG)
+    ![game interface](assets/images/img_5.PNG)
+    
 
 ## Features left to implement
    
@@ -49,7 +49,7 @@ The site will be targeted towards both adults and children as a fun way to learn
     -I confirmed that the colours anf fonts chosen are easy to read and accessible by running it trough lighthouse in devtools.
 
 
-![Screenshot of lighthouse reportRules](assets/images/img-8.PNG)
+![Screenshot of lighthouse report](assets/images/lighthouse.PNG)
 
     - I confirmed that the project is responsive, and looks good on all standard screen sizes using the devtools device toolbar.
 
