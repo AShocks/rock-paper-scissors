@@ -16,7 +16,10 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-
+/** 
+ * The main game function,accepts one parameter which is the data-type
+ * value of the selected button
+*/
 function playGame(playerChoice) {
     let choices = ["Rock", "Paper", "Scissors"];
     let computerChoice = choices[Math.floor(Math.random() * choices.length)];
@@ -63,11 +66,17 @@ function playGame(playerChoice) {
 let playerScore = 0;
 let computerScore = 0;
 
+/**
+ * Gets the current player score from the DOM and increments it by 1
+ */
 function incrementPlayerScore() {
     playerScore++;
     document.getElementById("player-score").innerHTML = playerScore;
 }
 
+/**
+ * Gets the current computer score from the DOM and increments it by 1
+ */
 function incrementComputerScore() {
     computerScore++;
     document.getElementById("computer-score").innerHTML = computerScore;
